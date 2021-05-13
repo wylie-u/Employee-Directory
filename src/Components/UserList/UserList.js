@@ -9,7 +9,9 @@ const UserList = (props) => {
     
     <tbody> 
       <tr>
+        <td>
       <img alt="user" src={props.user.picture.thumbnail}></img>
+      </td>
       <td>{props.user.name.first}</td>
       <td>{props.user.name.last}</td>
       <td>{props.user.cell}</td>
