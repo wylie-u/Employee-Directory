@@ -4,8 +4,10 @@ import { Component } from "react";
 import API from "./utils/API";
 import AllUsers from "./Components/UserList/AllUsers";
 
+
 class App extends Component {
   constructor() {
+    // calls parent constructor with no arguments
     super();
     // setting state to empty array 
     this.state = {
@@ -24,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <AllUsers users={this.state.users} />
+        <AllUsers users={this.state.users} /> 
       </div>
     );
   }

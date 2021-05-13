@@ -3,14 +3,28 @@ import React from "react";
 import UserList from "./UserList";
  // this will render the UserList outline 
 const AllUsers = (props) => {
+ 
+
   return (
-    <div>
+    // table header below div
+    <>
+  <table style={{width:"100%"}}>
+  <tr>
+    <th>Picture</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Cell</th>
+    <th>Email</th>
+    <th>Timezone</th>
+  </tr>
+  
       {props.users.map((user) => (
           // each data index will be mapped out into their own array, so that the page will load different users one by one. 
           // setting the key to the cell will give each index a unique identity
         <UserList key={user.cell} user={user} />
       ))}
-    </div>
+      </table>
+    </>
   );
 };
 
