@@ -3,9 +3,6 @@ import React from "react";
 // UserList is the outline for the data elements that will be displayed on the page (image, name, phone, email, dob)
 const UserList = (props) => {
   return (
-    // need to make into table 
-    // first row will be for header information 
-    // second row will be table data
     
     <tbody> 
       <tr>

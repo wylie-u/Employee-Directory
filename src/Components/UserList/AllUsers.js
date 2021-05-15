@@ -1,5 +1,6 @@
 import React from "react";
 // UserList is the outline for the data elements that will be displayed on the page (image, name, phone, email, dob)
+import SearchForm from "./SearchForm"; 
 import UserList from "./UserList";
  // this will render the UserList outline 
 const AllUsers = (props) => {
@@ -7,6 +8,7 @@ const AllUsers = (props) => {
 
   return (
     // table header below div
+    
     <>
   <table style={{width:"100%"}}>
   <tr>
