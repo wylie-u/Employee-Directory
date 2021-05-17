@@ -4,7 +4,7 @@ import React from "react";
 const UserList = (props) => {
   return (
     
-    <tbody> 
+    // <tbody> 
       <tr>
         <td>
       <img alt="user" src={props.user.picture.thumbnail}></img>
@@ -15,7 +15,7 @@ const UserList = (props) => {
       <td>{props.user.email}</td>
       <td>{props.user.location.timezone.description} </td>
       </tr>
-    </tbody>
+    // </tbody>
   );
 };
 // we'll export this file and call it in AllUsers, which will be used to map out each index into their own array to display on the page

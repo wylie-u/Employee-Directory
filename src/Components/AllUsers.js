@@ -1,16 +1,17 @@
 import React from "react";
 // UserList is the outline for the data elements that will be displayed on the page (image, name, phone, email, dob)
-import SearchForm from "./SearchForm"; 
+// import SearchForm from "./SearchForm"; 
 import UserList from "./UserList";
+
+
  // this will render the UserList outline 
 const AllUsers = (props) => {
- 
-
   return (
     // table header below div
     
     <>
   <table style={{width:"100%"}}>
+    <thead>
   <tr>
     <th>Picture</th>
     <th>Firstname</th>
@@ -25,6 +26,7 @@ const AllUsers = (props) => {
           // setting the key to the cell will give each index a unique identity
         <UserList key={user.cell} user={user} />
       ))}
+      </thead>
       </table>
     </>
   );
