@@ -1,5 +1,6 @@
 import React from "react";
 
+
 // UserList is the outline for the data elements that will be displayed on the page (image, name, phone, email, dob)
 const UserList = (props) => {
   return (

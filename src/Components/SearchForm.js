@@ -1,9 +1,9 @@
 import React from "react";
+import "./SearchForm.css"
 
 function SearchForm(props) {
-  
   return (
-    <form onSubmit={props.handleFormSubmit} className = "search">
+    <form onSubmit={props.handleForm} className = "search">
       <div className="form-group">
         <input
           onChange={props.handleInputChange}
@@ -14,9 +14,9 @@ function SearchForm(props) {
           placeholder="Search for an Employee"
           id="search"
         />
-        {/* <button onClick={props.handleFormSubmit} className="btn btn-primary mt-3">
+        <button onClick={props.handleFormSubmit} className="btn btn-primary mt-3 search-button" >
           Search
-        </button> */}
+        </button>
       </div>
     </form>
   );

@@ -1,9 +1,12 @@
-// import logo from "./logo.svg";
 import "./App.css";
 import { Component } from "react";
 import API from "./utils/API";
 import AllUsers from "./Components/AllUsers";
 import SearchForm from "./Components/SearchForm";
+import UserSort from "./Components/UserSort";
+
+
+
 
 // set state to filtered results
 class App extends Component {
@@ -27,70 +30,52 @@ class App extends Component {
     });
   }
 
-  // sort through employees based on search term
-  // check if there is a match and set that to empSort for rendering
-  // filterEmployees = () => {
-  //   let { users, search } = this.state;
-  //   let empFilter = users.filter((sorted) => {
-  //     return (
-  //       sorted.name.first.toLowerCase().includes(search.toLowerCase()) ||
-  //       sorted.name.last.toLowerCase().includes(search.toLowerCase()) ||
-  //       sorted.email.toLowerCase().includes(search.toLowerCase())
-  //     );
-  //   });
-  //   this.setState({ empFilter });
-  // };
-
-  // // grab search term, activate sorted
-  // startSort = (event) => {
-  //   this.setState({ search: event.target.value }, () => {
-  //     this.sortEmp();
-  //     this.setState({ sorted: true });
-  //   });
-  // };
 
 // each = each element in array
   handleInputChange = (event) => {
-    let filterResults = this.state.users.filter((each) => {
-      return (
-        each.name.first
-          .toLowerCase()
-          .includes(event.target.value.toLowerCase()) ||
-        each.name.last
-          .toLowerCase()
-          .includes(event.target.value.toLowerCase()));
-    });
-    console.log(filterResults)
-    //updating input's state to filtered
-    this.setState({ search: event.target.value, results: filterResults });
+    
+    this.setState({search:event.target.value})
     
   };
 
-
-
-  
-
-  handleFormSubmit = event => {
-    event.preventDefault();
-    // calling api 
-    this.searchEmployees(this.state.search);
-  };
-
-  
+// emailSorting = () => {
+//   const sortedUsers =this.state.users.sort((a,b)=>
+//   console.log()
+//   );
+//   this.setState(users: sortedUsers)
+// }
 
 
   
   // once api is called, this function will render AllUsers, which is a map of the retrieved data
   render() {
+    let filterResults = this.state.users.filter((each) => {
+      return (
+        each.name.first
+          .toLowerCase()
+          .includes(this.state.search.toLowerCase()) ||
+        each.name.last
+          .toLowerCase()
+          .includes(this.state.search.toLowerCase()));
+    });
     return (
       <div className="App">
-        <SearchForm 
+        <div className="background">
+        <div className="header">
+          <h1 className="display-4">Employee Directory</h1>
+          <p> Search for an employee by entering their name or email below.</p>
+          
+          <SearchForm 
         handleInputChange={this.handleInputChange}
-        handleFormSubmit={this.handleFormSubmit}
-        search={this.search} 
+        name={this.search}
          />
-        <AllUsers users={this.state.users} /> 
+        </div>
+        {/* <UserSort emailSort={this.emailSort}/> */}
+        <AllUsers users={filterResults} /> 
       </div>
+      </div>
+     
+      
     );
   }
 }

@@ -1,12 +1,51 @@
 table, th, td {
-  border: 1px solid black;
+
   border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+  overflow-x:auto
 }
 
-th, td {
-  padding: 15px;
+th {
+  background-color: #1a32bc;
+  color: white;
+  border: 1px solid whitesmoke;
 }
+
+
 
 table {
+  
   border-spacing: 5px;
+  background-color: whitesmoke;
+  
 }
+
+td:hover {
+  background-color: #ddd;
+  
+}
+
+tr:nth-child(even){background-color: #e4edf0;}
+
+
+.header {
+  padding: 25px;
+  text-align: center; 
+  background: #1a32bc;
+  color: white;
+  margin-bottom: 40px;
+}
+
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  
+}
+
+
+
+
+
+
