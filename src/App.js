@@ -24,7 +24,6 @@ class App extends Component {
   // when page loads, the randomuser api is called
   componentDidMount() {
     API.search().then((results) => {
-      // console.log(searchedUsers.data.results);
       // state is then updated to variable called users, which will be the results of the api call
       this.setState({ users: results.data.results });
     });
@@ -47,7 +46,7 @@ class App extends Component {
 
 
   
-  // once api is called, this function will render AllUsers, which is a map of the retrieved data
+
   render() {
     let filterResults = this.state.users.filter((each) => {
       return (
