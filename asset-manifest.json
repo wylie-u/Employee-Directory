@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/wylie-u/Employee-Directory/static/css/main.98a1a5c1.chunk.css",
+    "main.js": "/wylie-u/Employee-Directory/static/js/main.01f4b8e4.chunk.js",
+    "main.js.map": "/wylie-u/Employee-Directory/static/js/main.01f4b8e4.chunk.js.map",
+    "runtime-main.js": "/wylie-u/Employee-Directory/static/js/runtime-main.57ac20e2.js",
+    "runtime-main.js.map": "/wylie-u/Employee-Directory/static/js/runtime-main.57ac20e2.js.map",
+    "static/js/2.efa82870.chunk.js": "/wylie-u/Employee-Directory/static/js/2.efa82870.chunk.js",
+    "static/js/2.efa82870.chunk.js.map": "/wylie-u/Employee-Directory/static/js/2.efa82870.chunk.js.map",
+    "static/js/3.c9c93846.chunk.js": "/wylie-u/Employee-Directory/static/js/3.c9c93846.chunk.js",
+    "static/js/3.c9c93846.chunk.js.map": "/wylie-u/Employee-Directory/static/js/3.c9c93846.chunk.js.map",
+    "index.html": "/wylie-u/Employee-Directory/index.html",
+    "static/css/main.98a1a5c1.chunk.css.map": "/wylie-u/Employee-Directory/static/css/main.98a1a5c1.chunk.css.map",
+    "static/js/2.efa82870.chunk.js.LICENSE.txt": "/wylie-u/Employee-Directory/static/js/2.efa82870.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.57ac20e2.js",
+    "static/js/2.efa82870.chunk.js",
+    "static/css/main.98a1a5c1.chunk.css",
+    "static/js/main.01f4b8e4.chunk.js"
+  ]
+}
