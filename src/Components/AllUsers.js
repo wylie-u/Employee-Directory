@@ -12,7 +12,7 @@ const AllUsers = (props) => {
     
     <> 
     <div className="container">
-  <table style={{width:"100%"}}>
+  <table className="table-resposive">
     <thead>
   <tr>
     <th>Picture</th>
