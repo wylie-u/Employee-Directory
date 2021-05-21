@@ -8,6 +8,8 @@ Upon visiting the site, the user is presented with a table displaying their empl
 
 To generate the employee data, this project features the Random User API, which you can check out [here](https://randomuser.me/)!
 
+Check out the deployed site [here] (https://wylie-u.github.io/Employee-Directory/)!
+
 ## Table of Contents
 
  * [User Story](#User-Story)
